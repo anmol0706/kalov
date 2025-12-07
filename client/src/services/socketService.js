@@ -11,7 +11,7 @@ import { io } from 'socket.io-client';
 // Signaling server URL - configure via environment variable for production
 const SOCKET_URL = import.meta.env.VITE_SOCKET_URL ||
     (import.meta.env.PROD
-        ? 'https://meetflow-server.onrender.com'  // Production URL (update after deployment)
+        ? 'https://kalov.onrender.com'  // Production URL
         : 'http://localhost:3001');
 
 console.log('[Socket] Using server URL:', SOCKET_URL);

@@ -8,7 +8,7 @@
 // Backend API URL - configure via environment variable for production
 const API_BASE_URL = import.meta.env.VITE_API_URL ||
     (import.meta.env.PROD
-        ? 'https://meetflow-server.onrender.com'  // Production URL (update after deployment)
+        ? 'https://kalov.onrender.com'  // Production URL
         : 'http://localhost:3001');
 
 console.log('[API] Using base URL:', API_BASE_URL);
