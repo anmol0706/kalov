@@ -273,6 +273,12 @@ body {
   object-fit: cover;
 }
 
+/* Flip local/self video horizontally (mirror effect) */
+.video-flip {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
 .video-label {
   position: absolute;
   bottom: 16px;

@@ -288,7 +288,7 @@ const CallPage = () => {
                             autoPlay
                             playsInline
                             muted
-                            className={`w-full h-full object-cover ${isVideoOff ? 'hidden' : ''}`}
+                            className={`w-full h-full object-cover video-flip ${isVideoOff ? 'hidden' : ''}`}
                         />
                         {isVideoOff && (
                             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">

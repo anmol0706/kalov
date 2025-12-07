@@ -130,7 +130,7 @@ app.get('/api/rooms/:roomCode', (req, res) => {
         res.json({
             exists: true,
             participantCount: room.participants.length,
-            isFull: room.participants.length >= 2
+            isFull: room.participants.length >= 4
         });
     } else {
         res.json({ exists: false });
@@ -170,8 +170,8 @@ io.on('connection', (socket) => {
 
         const room = rooms.get(normalizedCode);
 
-        if (room.participants.length >= 2) {
-            socket.emit('room-full', { message: 'Room is full. Only 2 participants allowed.' });
+        if (room.participants.length >= 4) {
+            socket.emit('room-full', { message: 'Room is full. Maximum 4 participants allowed.' });
             return;
         }
 
