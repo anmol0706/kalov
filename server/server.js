@@ -32,7 +32,7 @@ const allowedOrigins = [
 // In production, also allow the Render frontend URL
 if (NODE_ENV === 'production') {
     // Add any additional production URLs
-    allowedOrigins.push('https://meetflow-client.onrender.com');
+    allowedOrigins.push('https://kalov-zh3v.onrender.com');
     allowedOrigins.push(/\.onrender\.com$/);
 }
 
